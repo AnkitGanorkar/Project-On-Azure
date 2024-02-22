@@ -2,6 +2,19 @@
 <html lang="en">
 
 <head>
+  <title>My Web App with Chartboost</title>
+    <!-- Include Chartboost SDK or JavaScript Library -->
+    <script src="https://path/to/chartboost/library.js"></script>
+    <script>
+        // Initialize Chartboost
+        Chartboost.startWithAppId("YOUR_CHARTBOOST_APP_ID", "YOUR_CHARTBOOST_APP_SIGNATURE");
+
+        // Example function to show an interstitial ad
+        function showInterstitialAd() {
+            Chartboost.showInterstitial();
+        }
+    </script>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -49,6 +62,8 @@
 </head>
 
 <body>
+  <h1>Welcome to My Web App</h1>
+  <button onclick="showInterstitialAd()">Show Interstitial Ad</button>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
@@ -174,16 +189,7 @@
           </div>
 
         </div>
-
       </div>
-
-
-
-
-
-
-
-
     </section>
       
 <section id="services" class="about-boxes">
@@ -203,9 +209,7 @@
               <div class="card-body">
                 <h5 class="card-title"><a href="">Marketing Automation</a></h5>
                 <p class="card-text">Streamline your marketing efforts and enhance efficiency with our marketing automation solutions. We leverage advanced automation tools to optimize your customer journey, automate repetitive tasks, and deliver personalized experiences at scale. By integrating various channels and automating workflows, we help you nurture leads, drive engagement, and maximize your marketing ROI.
-                </p>
-             
-             
+                </p>            
               </div>
             </div>
           </div>
@@ -220,9 +224,7 @@
                   Email Marketing</a></h5>
                 <p class="card-text">Unlock the power of personalized and targeted email marketing with our strategic approach. Our team designs and implements email marketing campaigns that deliver relevant content and offers directly to your customers' inboxes. By segmenting your audience, crafting compelling email copy, and analyzing campaign performance, we help you nurture leads, drive conversions, and build long-term customer relationships.
 
-                </p>
-             
-             
+                </p>             
               </div>
             </div>
           </div>
@@ -577,7 +579,7 @@
                 <div class="shine"></div>
                 <i class="bx bx-envelope"></i>
                 <h3>Email Us</h3>
-                <p>in@tciaglobal.com<br>ankit@targetlifters.com</p>
+                <p>in@targetlifters.com<br>ankit@targetlifters.com</p>
               </div>
             </div>
             <div class="col-md-6">
@@ -636,8 +638,6 @@
                 <input type="text" class="form-control" name="website" id="website" placeholder="" required>
               </div>
             </div>
-
-           
             <div class="row">
               <div class="col-md-12 form-group">
                 <label for="name">Country Name:</label>
@@ -717,12 +717,9 @@
                 <label for="service11"> User Acquisition</label>
             
                 <input type="checkbox" id="service12" name="service12" value="Creative Strategies">
-                <label for="service12"> Creative Strategies</label>
-            
-               
+                <label for="service12"> Creative Strategies</label>  
               </div>
             </div>     
-           
             <div class="form-group mt-3">
               <label for="Description">Description:</label>
               <textarea class="form-control" name="message" id="message" rows="3" placeholder="Optional" required></textarea>
@@ -735,25 +732,18 @@
             <div class="new-button"><button type="submit">Get a Free proposal</button></div>
           </form>
         </div>
-
       </div>
-
       </div>
     </section><!-- End Contact Section -->
     
-
   <!-- ======= Footer ======= -->
 </main><!-- End #main -->
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30165.662163073765!2d72.97796030305075!3d19.076581915364848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c136b519107b%3A0x8452b99754be0fc8!2sVashi%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1687890029744!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
   <footer id="footer">
-
-
     <div class="footer-top">
       <div class="container">
-  
         <div class="row">
-
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
               <h3>Target Lifters</h3>
@@ -772,7 +762,6 @@
               </div>
             </div>
           </div>
-
           
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
@@ -784,40 +773,27 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Search Media Automation (SMA)</a></li>
             </ul>
           </div>
-
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Subscribe</h4>
             <p></p>
             <form action="subscribe.php" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
-
           </div>
-
-         
-
-
-
-
         </div>
       </div>
     </div>
-
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span> Target Lifters </span></strong>. All Rights Reserved
       </div>
-      <div class="credits">
-        
-        
+      <div class="credits">  
         Designed by <a href="https://bootstrapmade.com/">Ankit R. Ganorkar </a>
       </div>
     </div>
   </footer><!-- End Footer -->
-
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -826,7 +802,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
