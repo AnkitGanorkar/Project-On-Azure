@@ -1,6 +1,6 @@
 <?php
 $sname = "targetlifter-server.database.windows.net";
-$uname = "targetlifter-server-admin";
+$uname = "targetlifter-server";
 $password = "xN]3PxKgeT9,^NuxN]3PxKgeT9,^Nu";
 $db_name = "target-lifter";
 
