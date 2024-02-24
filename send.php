@@ -2,7 +2,7 @@
 $sname = "targetlifter-server.database.windows.net";
 $uname = "targetlifter-server";
 $password = "xN]3PxKgeT9,^NuxN]3PxKgeT9,^Nu";
-$db_name = "target-lifter";
+$db_name = "targetlifter000";
 
 // Create a connection
 $conn = mysqli_connect($sname, $uname, $password, $db_name);
