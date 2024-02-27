@@ -877,7 +877,12 @@
         </div>
       </div>
     </div>
+    <button id="chatButton">Open Chatbot</button>
 
+<!-- Chatbot iframe (hidden by default) -->
+<div id="chatContainer" style="display: none;">
+    <iframe id="chatFrame" src="" style="height: 502px; max-height: 502px; width: 300px;"></iframe>
+</div>
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span> Target Lifters </span></strong>. All Rights Reserved
@@ -907,12 +912,7 @@
   <script src="assets/js/main.js"></script>
 
 
-<button id="chatButton">Open Chatbot</button>
 
-<!-- Chatbot iframe (hidden by default) -->
-<div id="chatContainer" style="display: none;">
-    <iframe id="chatFrame" src="" style="height: 502px; max-height: 502px; width: 300px;"></iframe>
-</div>
 
 <script>
     // Function to show the chatbot iframe
