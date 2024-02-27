@@ -874,26 +874,37 @@
             </form>
 
           </div>
-<button id="chatButton">Open Chatbot</button>
-    
-    <!-- Chatbot iframe (hidden by default) -->
-    <div id="chatContainer" style="display: none;">
-        <iframe id="chatFrame" src="" style="height: 502px; max-height: 502px; width: 300px;"></iframe>
-    </div>
-</div>
-
-<script>
-    // Function to show the chatbot iframe
-    function showChatbot() {
-        var chatContainer = document.getElementById('chatContainer');
-        chatContainer.style.display = 'block';
-        // Optionally, you can set the iframe source here
-        document.getElementById('chatFrame').src = "https://webchat.botframework.com/embed/digitalmarkting-bot?s=LHe9L-3QwE0.b6GShGUrLas1DG1zysvsrXfOnKp0z4LX0Qwlr7yx77U";
-    }
-
-    // Add event listener to the button
-    document.getElementById('chatButton').addEventListener('click', showChatbot);
-</script>
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Subscribe</h4>
+            <p></p>
+            <form action="subscribe.php" method="post">
+                <input type="email" name="email">
+                <input type="submit" value="Subscribe">
+            </form>
+            
+            <!-- Button to trigger the chatbot -->
+            <button id="chatButton" onclick="toggleChatbot()">Open Chatbot</button>
+            
+            <!-- Chatbot iframe (hidden by default) -->
+            <div id="chatContainer" style="display: none;">
+                <iframe id="chatFrame" src="" style="height: 502px; max-height: 502px; width: 300px;"></iframe>
+            </div>
+        </div>
+        
+        <script>
+            // Function to toggle the chatbot iframe
+            function toggleChatbot() {
+                var chatContainer = document.getElementById('chatContainer');
+                if (chatContainer.style.display === 'block') {
+                    chatContainer.style.display = 'none';
+                } else {
+                    chatContainer.style.display = 'block';
+                    // Optionally, you can set the iframe source here
+                    document.getElementById('chatFrame').src = "https://webchat.botframework.com/embed/digitalmarkting-bot?s=LHe9L-3QwE0.b6GShGUrLas1DG1zysvsrXfOnKp0z4LX0Qwlr7yx77U";
+                }
+            }
+        </script>
+        
 
 
 
