@@ -2,13 +2,13 @@
 
 <?php
 
-$sname = "localhost";
-$uname = "root";
-$password = "";
+$sname = "targetlifter.mysql.database.azure.com";
+$uname = "newankit";
+$password = "xN]3PxKgeT9,^NuxN]3PxKgeT9,^Nu";
 
-$db_name = "target-lifter";
+$db_name = "targetlifter000";
 
-$conn = mysqli_connect($sname, $uname, $password, $db_name);
+$conn = new mysqli($sname, $uname, $password, $db_name);
 
 if (!$conn) {
 	echo "Connection failed!";
