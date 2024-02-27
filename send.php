@@ -1,11 +1,11 @@
 <?php
-$sname = "targetlifter-server.database.windows.net";
-$uname = "targetlifter-server";
+$sname = "targetlifter.mysql.database.azure.com";
+$uname = "newankit";
 $password = "xN]3PxKgeT9,^NuxN]3PxKgeT9,^Nu";
-$db_name = "targetlifter000";
 
+$db_name = "targetlifter000";
 // Create a connection
-$conn = mysqli_connect($sname, $uname, $password, $db_name);
+$conn = new mysqli($sname, $uname, $password, $db_name);
 
 // Check the connection
 if (!$conn) {

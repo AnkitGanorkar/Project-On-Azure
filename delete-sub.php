@@ -64,7 +64,7 @@
         $db_name = "target-lifter";
 
         // Create a connection
-        $conn = mysqli_connect($sname, $uname, $password, $db_name);
+        $conn = new mysqli($sname, $uname, $password, $db_name);
 
         // Check the connection
         if (!$conn) {
