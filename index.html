@@ -59,6 +59,21 @@
     }
     </script>
   
+  <style>
+    /* Style for the button */
+    #chatButton {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 9999; /* Ensure it's above other elements */
+    }
+</style>
 </head>
 
 <body>
@@ -805,6 +820,23 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  
+  <script>
+    // Function to show the chatbot iframe
+    function showChatbot() {
+        var chatContainer = document.getElementById('chatContainer');
+        chatContainer.style.display = 'block';
+        // Optionally, you can set the iframe source here
+        document.getElementById('chatFrame').src = "https://webchat.botframework.com/embed/digitalmarkting-bot?s=LHe9L-3QwE0.b6GShGUrLas1DG1zysvsrXfOnKp0z4LX0Qwlr7yx77U";
+    }
+
+    // Add event listener to the button
+    document.getElementById('chatButton').addEventListener('click', showChatbot);
+</script>
+  <button id="chatButton">Open Chatbot</button>
+  <div id="chatContainer" style="display: none;">
+    <iframe id="chatFrame" src="" style="height: 502px; max-height: 502px; width: 300px;"></iframe>
+</div>
 </body>
 
 </html>
